@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 export default function DrawerDemo() {
   return (
     <Drawer>
-      <DrawerTrigger><Button>Open Drawer</Button></DrawerTrigger>
+      <DrawerTrigger>Open Drawer</DrawerTrigger>
       <DrawerContent>
         <DrawerHeader>
           <DrawerTitle>Are you absolutely sure?</DrawerTitle>

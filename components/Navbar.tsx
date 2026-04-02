@@ -13,16 +13,16 @@ const Navbar = (props: Props) => {
      ]
 
      return (
-    <nav className="flex justify-between mt-2 container mx-auto px-10 sticky top-4 z-50">
-          <span className="text-xl font-bold">LOGO</span>
+    <nav className="flex justify-between mt-2 container mx-auto py-2 px-5 rounded-full sticky top-4 z-50 bg-white/10 backdrop-blur-md">
+          <span className="text-xl font-bold flex items-center">LOGO</span>
           <ul className="flex gap-3 justify-center items-center">
                {navlinks.map((link) => (
                     <li key={link.name}>
-                         <a href={link.href} className="bg-[--color-foreground] text-[--color-background] p-2 rounded" >{link.name}</a>
+                         <a href={link.href} className="bg-[--color-foreground] text-[--color-background] p-2 rounded hover:text-amber-500" >{link.name}</a>
                     </li>
                ))}
                {/* Theme Toggle */}
-               <ToggleTheme />
+               <ToggleTheme className="bg-[--color-foreground] text-[--color-background] hover:text-amber-500" />
           </ul>
           
           
