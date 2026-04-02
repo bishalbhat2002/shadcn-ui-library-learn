@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export function SonnerTypes() {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap justify-center px-10 gap-2">
       <Button variant="outline" onClick={() => toast("Event has been created")}>
         Default
       </Button>

@@ -13,7 +13,7 @@ const Navbar = (props: Props) => {
      ]
 
      return (
-    <nav className="flex justify-between mt-2 container mx-auto py-2 px-5 rounded-full sticky top-4 z-50 bg-white/10 backdrop-blur-md">
+    <nav className="flex justify-between mt-2 container mx-auto py-2 px-5 rounded-full sticky top-4 z-50 bg-white/10 backdrop-blur-md w-full sm:w-6/10">
           <span className="text-xl font-bold flex items-center">LOGO</span>
           <ul className="flex gap-3 justify-center items-center">
                {navlinks.map((link) => (
@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
                     </li>
                ))}
                {/* Theme Toggle */}
-               <ToggleTheme className="bg-[--color-foreground] text-[--color-background] hover:text-amber-500" />
+               <ToggleTheme />
           </ul>
           
           

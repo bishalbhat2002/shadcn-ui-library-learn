@@ -1,7 +1,7 @@
 import Accordian from "@/components/Accordian";
 import CardX from "@/components/CardX";
 import { DialogDemo } from "@/components/DialogBox";
-import { accordianData } from "@/data/accordianData";
+
 import { HoverCardDemo } from "@/components/Hover-card";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -20,17 +20,14 @@ export default function Page() {
 
   return <>
   <div className="container mx-auto flex flex-col justify-center items-center py-10 gap-4">
-    {/* Card shown as an example */}
+
+    {/* Card as an example */}
+    <h1 className="text-2xl font-bold text-center mt-2">Card Example</h1>
     <CardX />
 
     {/* Accordion shown as an example */}
-    <div className="w-full sm:w-4/10 flex flex-col gap-4">
-      {
-        accordianData.map((item, index) => (
-          <Accordian item={item} key={index} />
-        ))
-      }
-    </div>
+    <h1 className="text-2xl font-bold text-center mt-2">Accordion Example</h1>
+    <Accordian />
 
     <div className="flex justify-center gap-5">
         

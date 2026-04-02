@@ -4,17 +4,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { accordianData } from "@/data/accordianData";
 
-export default function Accordian({item}:{item:{question:string, answer:string}}) {
+export default function Accordian() {
 
 return (
-<Accordion type="single" collapsible defaultValue="item-1">
-  <AccordionItem value="item-1">
-    <AccordionTrigger>{item.question}</AccordionTrigger>
-    <AccordionContent>
-      {item.answer}
-    </AccordionContent>
-  </AccordionItem>
+<Accordion className="w-95 mx-auto " type="single" collapsible >
+  {
+    accordianData.map((item, index) => (
+      <AccordionItem value={`item-${index + 1}`} key={index}>
+        <AccordionTrigger>{item.question}</AccordionTrigger>
+        <AccordionContent>
+          {item.answer}
+        </AccordionContent>
+      </AccordionItem> 
+    ))
+  }
+
 </Accordion>
 
 )
